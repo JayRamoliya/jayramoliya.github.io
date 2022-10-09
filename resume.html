@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resume</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400;500;600&display=swap');
+
+        :root {
+            --orange: #ff7800;
+            --black: #130f40;
+            --light-color: #666;
+            --box-shadow: 0 .5rem 1.5rem rgba(0, 0, 0, .1);
+            --border: .2rem solid rgba(0, 0, 0, .1);
+            --outline: .1rem solid rgba(0, 0, 0, .1);
+            --outline-hover: .2rem solid var(--black);
+        }
+
+        * {
+            font-family: 'Poppins', sans-serif;
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            outline: none;
+            border: none;
+            text-decoration: none;
+            text-transform: capitalize;
+            transition: all .2s linear;
+        }
+
+        html {
+            font-size: 62.5%;
+            overflow-x: hidden;
+            scroll-behavior: smooth;
+            scroll-padding-top: 7rem;
+        }
+
+        .heading {
+            text-align: center;
+            padding: 2rem 0;
+            padding-bottom: 3rem;
+            font-size: 3.5rem;
+            color: var(--black);
+        }
+
+        .heading span {
+            background: var(--orange);
+            color: #fff;
+            display: inline-block;
+            padding: .5rem 3rem;
+            clip-path: polygon(100% 0, 93% 50%, 100% 99%, 0% 100%, 7% 50%, 0% 0%);
+        }
+
+        body {
+            background: #eee;
+        }
+
+        section {
+            padding: 2rem 9%;
+        }
+
+        .features .box-container {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
+            gap: 1.5rem;
+        }
+
+        .features .box-container .box {
+            padding: 3rem 2rem;
+            background: #fff;
+            outline: var(--outline);
+            outline-offset: -1rem;
+            text-align: center;
+            box-shadow: var(--box-shadow);
+        }
+
+        .features .box-container .box:hover {
+            outline: var(--outline-hover);
+            outline-offset: 0rem;
+        }
+
+        .features .box-container .box img {
+            margin: 1rem 0;
+            height: 15rem;
+        }
+
+        .features .box-container .box h3 {
+            font-size: 2.5rem;
+            line-height: 1.8;
+            color: var(--black);
+        }
+
+        .features .box-container .box p {
+            font-size: 1.5rem;
+            line-height: 1.8;
+            color: var(--light-color);
+            padding: 1rem 0;
+        }
+    </style>
+</head>
+
+<body>
+
+    <section class="features" id="features">
+
+        <h1 class="heading"> Resume <span>Builder</span> </h1>
+
+        <div class="box-container">
+
+            <div class="box">
+                <img src="image/cv.png" alt="">
+                <a
+                    href="https://www.myperfectresume.com/" target="_blank">
+                    <h3>My Perfect Resume
+                    </h3>
+                </a>
+                <p>Your perfect resume is waiting for you. Create your resume easily with our Resume Builder.</p>
+            </div>
+
+            <div class="box">
+                <img src="image/cv (1).png" alt="">
+                <a
+                    href="https://www.indeed.com/" target="_blank">
+                    <h3>Indeed
+                    </h3>
+                </a>
+                <p>Professional Resume & Cover Letter Tools For Any Job</p>
+            </div>
+
+            <div class="box">
+                <img src="image/cv (2).png" alt="">
+                <a
+                    href="https://zety.com/" target="_blank">
+                    <h3>zety
+                    </h3>
+                </a>
+                <p>Professional Resume & Cover Letter Tools For Any Job.</p>
+            </div>
+
+            <div class="box">
+                <img src="image/resume.png" alt="">
+                <a
+                    href="https://novoresume.com/" target="_blank">
+                    <h3>novoresume
+                    </h3>
+                </a>
+                <p>The online resume builder getting folks hired by BBC, Google, Apple, Tesla, and Airbnb.</p>
+            </div>
+
+            <div class="box">
+                <img src="image/cv (1).png" alt="">
+                <a
+                    href="https://www.cakeresume.com/" target="_blank">
+                    <h3>Cakeresume
+                    </h3>
+                </a>
+                <p>The Resume to Land Your Dream Job</p>
+            </div>
+
+            <div class="box">
+                <img src="image/cv (2).png" alt="">
+                <a
+                    href="https://standardresume.co/" target="_blank">
+                    <h3>Standardresume
+                    </h3>
+                </a>
+                <p>Impressive Resumes for
+                    Web Developers, Ios Developers</p>
+            </div>
+
+            <div class="box">
+                <img src="image/cv.png" alt="">
+                <a
+                    href="https://www.resumenerd.com/" target="_blank">
+                    <h3>Resumenerd
+                    </h3>
+                </a>
+                <p>Create a custom resume and cover letter in minutes!</p>
+            </div>
+
+            <div class="box">
+                <img src="image/resume.png" alt="">
+                <a
+                    href="https://www.livecareer.com/" target="_blank">
+                    <h3>livecareer
+                    </h3>
+                </a>
+                <p>Get hired faster with our resume builder!</p>
+            </div>
+
+            <div class="box">
+                <img src="image/cv (2).png" alt="">
+                <a
+                    href="https://resumecompanion.com/" target="_blank">
+                    <h3>Resumecompanion
+                    </h3>
+                </a>
+                <p>Easily Create a Professional Resume That Lands More Interviews</p>
+            </div>
+
+        </div>
+
+    </section>
+</body>
+
+</html>

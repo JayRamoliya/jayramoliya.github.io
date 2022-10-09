@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chrome</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400;500;600&display=swap');
+
+        :root {
+            --orange: #ff7800;
+            --black: #130f40;
+            --light-color: #666;
+            --box-shadow: 0 .5rem 1.5rem rgba(0, 0, 0, .1);
+            --border: .2rem solid rgba(0, 0, 0, .1);
+            --outline: .1rem solid rgba(0, 0, 0, .1);
+            --outline-hover: .2rem solid var(--black);
+        }
+
+        * {
+            font-family: 'Poppins', sans-serif;
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            outline: none;
+            border: none;
+            text-decoration: none;
+            text-transform: capitalize;
+            transition: all .2s linear;
+        }
+
+        html {
+            font-size: 62.5%;
+            overflow-x: hidden;
+            scroll-behavior: smooth;
+            scroll-padding-top: 7rem;
+        }
+
+        .heading {
+            text-align: center;
+            padding: 2rem 0;
+            padding-bottom: 3rem;
+            font-size: 3.5rem;
+            color: var(--black);
+        }
+
+        .heading span {
+            background: var(--orange);
+            color: #fff;
+            display: inline-block;
+            padding: .5rem 3rem;
+            clip-path: polygon(100% 0, 93% 50%, 100% 99%, 0% 100%, 7% 50%, 0% 0%);
+        }
+
+        body {
+            background: #eee;
+        }
+
+        section {
+            padding: 2rem 9%;
+        }
+
+        .features .box-container {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
+            gap: 1.5rem;
+        }
+
+        .features .box-container .box {
+            padding: 3rem 2rem;
+            background: #fff;
+            outline: var(--outline);
+            outline-offset: -1rem;
+            text-align: center;
+            box-shadow: var(--box-shadow);
+        }
+
+        .features .box-container .box:hover {
+            outline: var(--outline-hover);
+            outline-offset: 0rem;
+        }
+
+        .features .box-container .box img {
+            margin: 1rem 0;
+            height: 15rem;
+        }
+
+        .features .box-container .box h3 {
+            font-size: 2.5rem;
+            line-height: 1.8;
+            color: var(--black);
+        }
+
+        .features .box-container .box p {
+            font-size: 1.5rem;
+            line-height: 1.8;
+            color: var(--light-color);
+            padding: 1rem 0;
+        }
+    </style>
+</head>
+
+<body>
+
+    <section class="features" id="features">
+
+        <h1 class="heading"> Chrome <span>Extension</span> </h1>
+
+        <div class="box-container">
+
+            <div class="box">
+                <img src="image/new.jpg" alt="">
+
+                <a
+                    href="https://chrome.google.com/webstore/detail/power-thesaurus/hhnjkanigjoiglnlopahbbjdbfhkndjk?hl=en" target="_blank">
+                    <h3>Power Thesaurus
+                    </h3>
+                </a>
+                <p>
+                    Replace weak words and upskill your writing. Tap into the power of synonyms. Grab attention and
+                    evoke emotion in your reader</p>
+            </div>
+
+            <div class="box">
+                <img src="image/new1.jpg" alt="">
+                <a
+                    href="https://chrome.google.com/webstore/detail/smallpdf-edit-compress-an/ohfgljdgelakfkefopgklcohadegdpjf?hl=en" target="_blank">
+                    <h3>Smallpdf
+                    </h3>
+                </a>
+                <p>
+
+                    A simple but mighty PDF editing tool. It's excellent for highlighting/annotating your readings. Edit PDFs without expensive Adobe</p>
+                
+            </div>
+
+            <div class="box">
+                <img src="image/new2.jpg" alt="">
+                <a
+                    href="https://chrome.google.com/webstore/detail/mybib-free-citation-gener/phidhnmbkbkbkbknhldmpmnacgicphkf?hl=en" target="_blank">
+                    <h3>MyBib Free: Citation Generator
+                    </h3>
+                </a>
+                <p>A Chrome extension that generates citations automatically.
+                    . Works great for academic assignments and papers. Click the button on any webpage.</p>
+            </div>
+
+            <div class="box">
+                <img src="image/new3.jpg" alt="">
+                <a
+                    href="https://chrome.google.com/webstore/detail/adblock-%E2%80%94-best-ad-blocker/gighmmpiobklfepjocnamgkkbiglidom" target="_blank">
+                    <h3>Adblock
+                    </h3>
+                </a>
+                <p>
+
+                    YouTube is free university.
+                    
+                    Yet it can quickly become TV (with all the ads).
+                    
+                    Stop annoying video ads that you can't skip.
+                    
+                    You'll also eliminate pop-ups and banners.
+                    </p>
+            </div>
+
+            <div class="box">
+                <img src="image/new4.jpg" alt="">
+                <a
+                    href="https://chrome.google.com/webstore/detail/focus-to-do-pomodoro-time/ngceodoilcgpmkijopinlkmohnfifjfb?hl=en" target="_blank">
+                    <h3>Focus To-Do
+                    </h3>
+                </a>
+                <p>
+
+                    A beautiful Pomodoro timer.
+                    
+                    Set a timer in the app for 25 mins on, 5 mins off.
+                    
+                    25 mins of pure focus is science-backed:
+                    
+                    It's cognitively challenging but feels attainable.
+                    
+                    Stay motivated while you learn.</p>
+            </div>
+
+            <div class="box">
+                <img src="image/new5.jpg" alt="">
+                <a
+                    href="https://chrome.google.com/webstore/detail/toucan-language-learning/lokjgaehpcnlmkebpmjiofccpklbmoci?hl=en" target="_blank">
+                    <h3>Toucan
+                    </h3>
+                </a>
+                <p>
+
+                    Learn a new language by simply browsing the internet.
+                    
+                    • See in-text replacements of certain words
+                    • Learn within the context of a language you already know</p>
+            </div>
+
+            <div class="box">
+                <img src="image/new6.jpg" alt="">
+                <a
+                    href="https://chrome.google.com/webstore/detail/scribe-%E2%80%94-documentation-so/okfkdaglfjjjfefdcppliegebpoegaii?hl=en&utm_source=LinkedIn" target="_blank">
+                    <h3>Scribe
+                    </h3>
+                </a>
+                <p>
+                    Create step-by-step guides quickly.
+                    
+                    • Train yourself, teammates, or clients
+                    • Scribe monitors clicks/keystrokes to generate instructions
+                    • Document your processes 15x faster</p>
+            </div>
+
+            <div class="box">
+                <img src="image/" alt="">
+                <a
+                    href="" target="_blank">
+                    <h3>
+                    </h3>
+                </a>
+                <p></p>
+            </div>
+            <div class="box">
+                <img src="image/" alt="">
+                <a
+                    href="" target="_blank">
+                    <h3>
+                    </h3>
+                </a>
+                <p></p>
+            </div>
+
+        </div>
+
+    </section>
+</body>
+
+</html>

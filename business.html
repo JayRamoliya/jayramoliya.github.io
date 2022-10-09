@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Websites</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400;500;600&display=swap');
+
+        :root {
+            --orange: #ff7800;
+            --black: #130f40;
+            --light-color: #666;
+            --box-shadow: 0 .5rem 1.5rem rgba(0, 0, 0, .1);
+            --border: .2rem solid rgba(0, 0, 0, .1);
+            --outline: .1rem solid rgba(0, 0, 0, .1);
+            --outline-hover: .2rem solid var(--black);
+        }
+
+        * {
+            font-family: 'Poppins', sans-serif;
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            outline: none;
+            border: none;
+            text-decoration: none;
+            text-transform: capitalize;
+            transition: all .2s linear;
+        }
+
+        html {
+            font-size: 62.5%;
+            overflow-x: hidden;
+            scroll-behavior: smooth;
+            scroll-padding-top: 7rem;
+        }
+
+        .heading {
+            text-align: center;
+            padding: 2rem 0;
+            padding-bottom: 3rem;
+            font-size: 3.5rem;
+            color: var(--black);
+        }
+
+        .heading span {
+            background: var(--orange);
+            color: #fff;
+            display: inline-block;
+            padding: .5rem 3rem;
+            clip-path: polygon(100% 0, 93% 50%, 100% 99%, 0% 100%, 7% 50%, 0% 0%);
+        }
+
+        body {
+            background: #eee;
+        }
+
+        section {
+            padding: 2rem 9%;
+        }
+
+        .features .box-container {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
+            gap: 1.5rem;
+        }
+
+        .features .box-container .box {
+            padding: 3rem 2rem;
+            background: #fff;
+            outline: var(--outline);
+            outline-offset: -1rem;
+            text-align: center;
+            box-shadow: var(--box-shadow);
+        }
+
+        .features .box-container .box:hover {
+            outline: var(--outline-hover);
+            outline-offset: 0rem;
+        }
+
+        .features .box-container .box img {
+            margin: 1rem 0;
+            height: 15rem;
+        }
+
+        .features .box-container .box h3 {
+            font-size: 2.5rem;
+            line-height: 1.8;
+            color: var(--black);
+        }
+
+        .features .box-container .box p {
+            font-size: 1.5rem;
+            line-height: 1.8;
+            color: var(--light-color);
+            padding: 1rem 0;
+        }
+    </style>
+</head>
+
+<body>
+
+    <section class="features" id="features">
+
+        <h1 class="heading"> Tools <span>Build Your Personal Brand</span> </h1>
+
+        <div class="box-container">
+
+            <div class="box">
+                <img src="image/web1.png" alt="">
+                <a
+                    href="https://growth.design/psychology" target="_blank">
+                    <h3>Growth Design
+                    </h3>
+                </a>
+                <p>Psychology of Design, Marketing, Sales in 1 website.</p>
+            </div>
+
+            <div class="box">
+                <img src="image/open.png" alt="">
+                <a
+                    href="https://ladder.io/" target="_blank">
+                    <h3>Ladder
+                    </h3>
+                </a>
+                <p>Growth Tactics Playbook — Free 796+ growth hacks you can use to: Grow Sales, Get More Traffic, Grow 10x more quickly</p>
+            </div>
+
+            <div class="box">
+                <img src="image/open.png" alt="">
+                <a
+                    href="https://photosonic.writesonic.com/" target="_blank">
+                    <h3>Photosonic
+                    </h3>
+                </a>
+                <p>Want an AI image generator for:
+                    - Ads
+                    - Landing Pages
+                    - Social Media Post ?</p>
+            </div>
+
+            <div class="box">
+                <img src="image/open.png" alt="">
+                <a
+                    href="https://swiped.co/" target="_blank">
+                    <h3>Swiped
+                    </h3>
+                </a>
+                <p>A collection of profitable marketing & rare copywriting examples</p>
+            </div>
+
+            <div class="box">
+                <img src="image/trello.png" alt="">
+                <a
+                    href="https://trello.com/home" target="_blank">
+                    <h3>Trello
+                    </h3>
+                </a>
+                <p>Want to manage any type of project with your group or teams? adds files, checklists, or even automation.</p>
+            </div>
+
+            <div class="box">
+                <img src="image/open.png" alt="">
+                <a
+                    href="https://www.mailcharts.com/" target="_blank">
+                    <h3>MailCharts
+                    </h3>
+                </a>
+                <p>Need more sales with email marketing? inspires you to create more engaging, evidence-based email and SMS campaigns.</p>
+            </div>
+
+            <div class="box">
+                <img src="image/open.png" alt="">
+                <a
+                    href="https://marketingexamples.com/" target="_blank">
+                    <h3>Marketing Examples
+                    </h3>
+                </a>
+                <p>Want to perfect your marketing, cold email, boost referrals or improve SEO? helps you bring more customers and profit.</p>
+            </div>
+
+            <div class="box">
+                <img src="image/open.png" alt="">
+                <a
+                    href="https://www.hotjar.com/" target="_blank">
+                    <h3>Hotjar
+                    </h3>
+                </a>
+                <p>Understand how users behave on your site, what they need, and how they feel, fast.</p>
+            </div>
+
+            <div class="box">
+                <img src="image/open.png" alt="">
+                <a
+                    href="https://www.producthunt.com/" target="_blank">
+                    <h3>Producthunt
+                    </h3>
+                </a>
+                <p>Want to lunch your online business, course, etc? But don't have any audience? lunches your online business and gets you traffic</p>
+            </div>
+
+            
+
+        </div>
+
+    </section>
+</body>
+
+</html>
