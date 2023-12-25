@@ -1,0 +1,434 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>>iCodeThis - Challenge #03: Cart Item</title>
+    <script
+      src="https://kit.fontawesome.com/d92630495d.js"
+      crossorigin="anonymous"
+    ></script>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400;700;900&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+        * {
+  font-size: 62, 5%;
+  box-sizing: border-box;
+  margin: 0;
+}
+
+body {
+  height: 100%;
+  width: 100%;
+  min-height: 100vh;
+  background-color: #eef3f9;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center; 
+}
+
+main {
+  width: 40rem;
+  height: 27rem;
+  background-color: #ffffff;
+  -webkit-box-shadow: 0px 15px 11px -6px #cdd4e6;
+  box-shadow: 0px 15px 11px -6px #cdd4e6;
+  display: flex;
+  align-items: flex-start;
+  padding: 3rem;
+  margin: 1rem;
+  gap: 2rem;
+  border-radius: 0.5rem;
+  align-items: center;
+  justify-content: center; 
+}
+
+.headset {
+  height: 11rem;
+}
+
+#cart-text {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+.free-shipping {
+  font-family: "Lato", sans-serif;
+  color: #fff;
+  font-size: 0.65rem;
+  background-color: #191649;
+  border: 0;
+  border-radius: 0.9rem;
+  padding: 0.3rem 0.4rem;
+  margin-bottom: 0.5rem;
+}
+
+h2 {
+  font-family: "Lato", sans-serif;
+  font-size: 1.2rem;
+  font-weight: 700;
+  line-height: 1.5rem;
+  margin-bottom: 2rem;
+  cursor:default;
+}
+
+h3 {
+  font-family: "Lato", sans-serif;
+  font-weight: 300;
+  font-size: 0.65rem;
+  text-decoration: line-through;
+  cursor:default;
+}
+
+h1 {
+  font-family: "Lato", sans-serif;
+  font-weight: 900;
+  cursor:default;
+  font-size: 2.5rem;
+}
+
+h4 {
+  font-family: "Lato", sans-serif;
+  font-weight: 300;
+  font-size: 0.7rem;
+  margin-bottom: 1rem;
+  cursor:default;
+}
+
+.add-to-cart {
+  width: 100%;
+  height: 2.7rem;
+  font-family: "Lato", sans-serif;
+  font-size: 1rem;
+  background-color: #4787e9;
+  color: #fff;
+  font-weight: 400;
+  border: 0;
+  border-bottom: 0.3rem solid #1e56ed;
+  border-radius: 0.4rem;
+  margin-bottom: 1rem;
+  cursor: pointer;
+}
+
+.add-to-cart:active {
+  border-bottom: 0;
+}
+
+.stock {
+  font-weight: 700;
+  text-decoration: none;
+  margin-bottom: 2rem;
+}
+
+a{
+    text-decoration: none;
+}
+h3 i {
+  color: #04d58b;
+  margin-right: 0.2rem;
+}
+
+#buttons {
+  display: flex;
+  justify-content: space-between;
+  gap: 1rem;
+}
+
+.add-to-cart-2,
+.add-to-wishlist {
+  font-family: "Lato", sans-serif;
+  font-size: 1rem;
+  font-weight: 400;
+  height: 2.7rem;
+  width: 11rem;
+  background-color: #fff;
+  border: 0.1rem solid #d6d5d9;
+  border-radius: 0.2rem;
+  cursor: pointer;
+}
+
+.add-to-cart-2 i,
+.add-to-wishlist i {
+  margin-right: 0.5rem;
+}
+
+.add-to-cart-2:hover,
+.add-to-wishlist:hover {
+  border: 0.1rem solid #a7a7aa;
+}
+
+@media (max-width: 700px) {
+  * {
+    font-size: 90%;
+  }
+}
+
+@media (max-width: 630px) {
+  * {
+    font-size: 80%;
+  }
+}
+
+@media (max-width: 580px) {
+  * {
+    font-size: 70%;
+  }
+}
+
+@media (max-width: 495px) {
+  * {
+    font-size: 60%;
+  }
+}
+
+@media (max-width: 420px) {
+  * {
+    font-size: 50%;
+  }
+}
+    </style>
+  </head>
+  <body>
+    <main>
+      <img class="headset" src="https://m.media-amazon.com/images/I/61QRgOgBx0L._SX679_.jpg" alt="headphones set with pink color" />
+
+      <div id="cart-text">
+        <button class="free-shipping">Free shipping</button>
+        <h2>OnePlus Nord CE 3 Lite 5G (Pastel Lime, 8GB RAM, 128GB Storage)</h2>
+        <h3>29,999</h3>
+        <h1>19,999</h1>
+        <h4>The offer is valid until April 3, or as long as stock lasts!</h4>
+        <button class="add-to-cart"><a href="https://amzn.to/44nlnzK">Buy</a></button>
+
+        <div id="buttons">
+          <button class="add-to-cart-2">
+            <i class="fa-solid fa-cart-shopping"></i><a href="https://amzn.to/44nlnzK">Add to Cart</a>
+          </button>
+          <button class="add-to-wishlist">
+            <i class="fa-solid fa-heart"></i> <a href="https://amzn.to/44nlnzK">Add to wishlist</a>
+          </button>
+        </div>
+      </div>
+    </main>
+
+    <main>
+      <img class="headset" src="https://m.media-amazon.com/images/I/61kezU7159L._SL1100_.jpg" alt="headphones set with pink color" />
+
+      <div id="cart-text">
+        <button class="free-shipping">Free shipping</button>
+        <h2>PTron Bassbuds Plus in Ear True Wireless Stereo Earbuds with Mic,</h2>
+        <h3>1000</h3>
+        <h1>699</h1>
+        <h4>The offer is valid until April 3, or as long as stock lasts!</h4>
+        <button class="add-to-cart"><a href="https://amzn.to/3CWIqG3">Buy</a></button>
+
+        <div id="buttons">
+          <button class="add-to-cart-2">
+            <i class="fa-solid fa-cart-shopping"></i><a href="https://amzn.to/3CWIqG3">Add to Cart</a>
+          </button>
+          <button class="add-to-wishlist">
+            <i class="fa-solid fa-heart"></i> <a href="https://amzn.to/3CWIqG3">Add to wishlist</a>
+          </button>
+        </div>
+      </div>
+    </main>
+
+    <main>
+      <img class="headset" src="https://m.media-amazon.com/images/I/71dEY4Neo3L._SL1500_.jpg" alt="headphones set with pink color" />
+
+      <div id="cart-text">
+        <button class="free-shipping">Free shipping</button>
+        <h2>realme narzo N53 (Feather Gold, 4GB+64GB) 33W Segment Fastest Charging </h2>
+        <h3>10,000</h3>
+        <h1>8,900</h1>
+        <h4>The offer is valid until April 3, or as long as stock lasts!</h4>
+        <button class="add-to-cart"><a href="https://amzn.to/3CUoPGu">Buy</a></button>
+        <div id="buttons">
+          <button class="add-to-cart-2">
+            <i class="fa-solid fa-cart-shopping"></i><a href="https://amzn.to/3CUoPGu">Add to Cart</a>
+          </button>
+          <button class="add-to-wishlist">
+            <i class="fa-solid fa-heart"></i><a href="https://amzn.to/3CUoPGu">Add to wishlist</a>
+          </button>
+        </div>
+      </div>
+    </main>
+
+    <main>
+      <img class="headset" src="https://m.media-amazon.com/images/I/71MaGTXl7ML._UY550_.jpg" alt="headphones set with pink color" />
+
+      <div id="cart-text">
+        <button class="free-shipping">Free shipping</button>
+        <h2>Lymio Casual Shirt for Men|| Shirt for Men||</h2>
+        <h3>4,999</h3>
+        <h1>369</h1>
+        <h4>The offer is valid until April 3, or as long as stock lasts!</h4>
+        <button class="add-to-cart"><a href="https://amzn.to/3XuHVfO">Buy</a></button>
+        <div id="buttons">
+          <button class="add-to-cart-2">
+            <i class="fa-solid fa-cart-shopping"></i><a href="https://amzn.to/3XuHVfO">Add to Cart</a>
+          </button>
+          <button class="add-to-wishlist">
+            <i class="fa-solid fa-heart"></i><a href="https://amzn.to/3XuHVfO">Add to wishlist</a>
+          </button>
+        </div>
+      </div>
+    </main>
+
+    <main>
+      <img class="headset" src="https://m.media-amazon.com/images/I/6183S-UvHJL._SL1500_.jpg" alt="headphones set with pink color" />
+
+      <div id="cart-text">
+        <button class="free-shipping">Free shipping</button>
+        <h2>Samsung Galaxy Buds Live Bluetooth Truly Wireless in Ear Earbuds with Mic</h2>
+        <h3>15,000</h3>
+        <h1>4,700</h1>
+        <h4>The offer is valid until April 3, or as long as stock lasts!</h4>
+        <button class="add-to-cart"><a href="https://amzn.to/3pwQudC">Buy</a></button>
+        <div id="buttons">
+          <button class="add-to-cart-2">
+            <i class="fa-solid fa-cart-shopping"></i><a href=https://amzn.to/3pwQudC">Add to Cart</a>
+          </button>
+          <button class="add-to-wishlist">
+            <i class="fa-solid fa-heart"></i><a href="https://amzn.to/3pwQudC">Add to wishlist</a>
+          </button>
+        </div>
+      </div>
+    </main>
+
+    <main>
+      <img class="headset" src="https://m.media-amazon.com/images/I/5161KgWnNEL._SY355_.jpg" alt="headphones set with pink color" />
+
+      <div id="cart-text">
+        <button class="free-shipping">Free shipping</button>
+        <h2>boAt Airdopes 121v2 in-Ear True Wireless Earbuds with Upto 14 Hours Playback</h2>
+        <h3>2,900</h3>
+        <h1>1,299</h1>
+        <h4>The offer is valid until April 3, or as long as stock lasts!</h4>
+        <button class="add-to-cart"><a href="https://amzn.to/3PxdJyP">Buy</a></button>
+        <div id="buttons">
+          <button class="add-to-cart-2">
+            <i class="fa-solid fa-cart-shopping"></i><a href="https://amzn.to/3PxdJyP">Add to Cart</a>
+          </button>
+          <button class="add-to-wishlist">
+            <i class="fa-solid fa-heart"></i><a href="https://amzn.to/3PxdJyP">Add to wishlist</a>
+          </button>
+        </div>
+      </div>
+    </main>
+
+    <main>
+      <img class="headset" src="https://m.media-amazon.com/images/I/614-Udt3tbL._UX522_.jpg" alt="headphones set with pink color" />
+
+      <div id="cart-text">
+        <button class="free-shipping">Free shipping</button>
+        <h2>Zemic Portable Travel Umbrella - Umbrellas for Rain Windproof, Strong </h2>
+        <h3>2,500</h3>
+        <h1>599</h1>
+        <h4>The offer is valid until April 3, or as long as stock lasts!</h4>
+        <button class="add-to-cart"><a href="https://amzn.to/42YMkJa">Buy</a></button>
+        <div id="buttons">
+          <button class="add-to-cart-2">
+            <i class="fa-solid fa-cart-shopping"></i><a href="https://amzn.to/42YMkJa">Add to Cart</a>
+          </button>
+          <button class="add-to-wishlist">
+            <i class="fa-solid fa-heart"></i><a href="https://amzn.to/42YMkJa">Add to wishlist</a>
+          </button>
+        </div>
+      </div>
+    </main>
+
+    <main>
+      <img class="headset" src="https://m.media-amazon.com/images/I/51fTKAyBNcL._SY355_.jpg" alt="headphones set with pink color" />
+
+      <div id="cart-text">
+        <button class="free-shipping">Free shipping</button>
+        <h2>AmazonBasics True Wireless in-Ear Earbuds with Mic</h2>
+        <h3>2,400</h3>
+        <h1>999</h1>
+        <h4>The offer is valid until April 3, or as long as stock lasts!</h4>
+        <button class="add-to-cart"><a href="https://amzn.to/3PVHSrV">Buy</a></button>
+        <div id="buttons">
+          <button class="add-to-cart-2">
+            <i class="fa-solid fa-cart-shopping"></i><a href="https://amzn.to/3PVHSrV">Add to Cart</a>
+          </button>
+          <button class="add-to-wishlist">
+            <i class="fa-solid fa-heart"></i><a href="https://amzn.to/3PVHSrV">Add to wishlist</a>
+          </button>
+        </div>
+      </div>
+    </main>
+
+    <main>
+      <img class="headset" src="https://img1.gadgetsnow.com/gd/images/products/additional/large/G413553_View_1/computer-laptop/laptops/lenovo-e41-55-82fj00blih-amd-athlon-silver-3050u-14-inches-everyday-computing-laptop-4gb-256gb-ssd-windows-10-grey-1-59-kg-.jpg" alt="headphones set with pink color" />
+
+      <div id="cart-text">
+        <button class="free-shipping">Free shipping</button>
+        <h2>Lenovo E41-55 AMD 14-inch HD 220 Nits Antiglare Thin and Light Laptop</h2>
+        <h3>78,564</h3>
+        <h1>19,700</h1>
+        <h4>The offer is valid until April 3, or as long as stock lasts!</h4>
+        <button class="add-to-cart"><a href="https://amzn.to/3PG01d6">Buy</a></button>
+        <div id="buttons">
+          <button class="add-to-cart-2">
+            <i class="fa-solid fa-cart-shopping"></i><a href="https://amzn.to/3PG01d6">Add to Cart</a>
+          </button>
+          <button class="add-to-wishlist">
+            <i class="fa-solid fa-heart"></i><a href="https://amzn.to/3PG01d6">Add to wishlist</a>
+          </button>
+        </div>
+      </div>
+    </main>
+
+    <main>
+      <img class="headset" src="https://m.media-amazon.com/images/I/61c1JhpcwWL._SY355_.jpg" alt="headphones set with pink color" />
+
+      <div id="cart-text">
+        <button class="free-shipping">Free shipping</button>
+        <h2>boAt Wave Prime47 Smart Watch with 1.69" HD Display, 700+ Active Modes,</h2>
+        <h3>5,900</h3>
+        <h1>1,099</h1>
+        <h4>The offer is valid until April 3, or as long as stock lasts!</h4>
+        <button class="add-to-cart"><a href="https://amzn.to/3JGCTHw">Buy</a></button>
+        <div id="buttons">
+          <button class="add-to-cart-2">
+            <i class="fa-solid fa-cart-shopping"></i><a href="https://amzn.to/3JGCTHw">Add to Cart</a>
+          </button>
+          <button class="add-to-wishlist">
+            <i class="fa-solid fa-heart"></i><a href="https://amzn.to/3JGCTHw">Add to wishlist</a>
+          </button>
+        </div>
+      </div>
+    </main>
+
+    <main>
+      <img class="headset" src="https://m.media-amazon.com/images/I/614aMDyKJXL._SY450_.jpg" alt="headphones set with pink color" />
+
+      <div id="cart-text">
+        <button class="free-shipping">Free shipping</button>
+        <h2>Dell Vostro 3510 Laptop,Intel i5-1135G7/8GB/1TB+256GB SSD/15.6"</h2>
+        <h3>70,000</h3>
+        <h1>52,490</h1>
+        <h4>The offer is valid until April 3, or as long as stock lasts!</h4>
+        <button class="add-to-cart"><a href="https://amzn.to/3PDZok1">Buy</a></button>
+        <div id="buttons">
+          <button class="add-to-cart-2">
+            <i class="fa-solid fa-cart-shopping"></i><a href="https://amzn.to/3PDZok1">Add to Cart</a>
+          </button>
+          <button class="add-to-wishlist">
+            <i class="fa-solid fa-heart"></i><a href="https://amzn.to/3PDZok1">Add to wishlist</a>
+          </button>
+        </div>
+      </div>
+    </main>
+
+
+  </body>
+</html>
