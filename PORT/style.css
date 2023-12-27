@@ -95,7 +95,7 @@ body {
 .about {
   width: 100%;
   background: #1a1a1a;
-  padding: 6em 0;
+  padding: 2em 0;
 }
 .about div{
   width: 40%;
@@ -103,6 +103,7 @@ body {
   align-items: flex-start;
 }
 .about img{
+  border-radius: 50%;
   width: 25em;
   margin: 2em;
 }
