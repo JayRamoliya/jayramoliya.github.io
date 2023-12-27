@@ -558,3 +558,41 @@ nav h1{
 #loader h3{
   font-size: 50px;
 }
+
+
+
+
+#flying a {
+  position: absolute;
+}
+
+#instagram {
+  top: 10vh;
+  left: 20vw;
+  width: 10vw;
+  animation: mymove 4s ease-out infinite alternate;
+}
+
+#github {
+  top: 5vh;
+  right: 14vw;
+  width: 10vw;
+  animation: mymove 4s ease-out infinite alternate;
+}
+
+#linkdin {
+  top: 60vh;
+  left: 7.5vw;
+  width: 2.7vw;
+}
+
+
+@keyframes mymove {
+  from {
+    top: 0px;
+  }
+
+  to {
+    top: 200px;
+  }
+}
