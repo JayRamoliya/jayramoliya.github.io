@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Basic Calculator</title>
+    <link rel="stylesheet" href="style.css">
+
+    <link rel="stylesheet" href="./social-media-icons.css">
+    <script src="https://kit.fontawesome.com/66aa7c98b3.js" crossorigin="anonymous"></script>
+    <style>
+        .social-menu ul {
+            position: absolute;
+            top: 90%;
+            left: 50%;
+            padding: 0;
+            margin: 0;
+            transform: translate(-50%, -50%);
+            display: flex;
+        }
+        .social-menu ul li {
+            list-style: none;
+            margin: 0 15px;
+        }
+        .social-menu ul li .fab {
+            font-size: 30px;
+            line-height: 60px;
+            transition: .3s;
+            color: #000;
+        }
+        .social-menu ul li .fab:hover {
+            color: #fff;
+        }
+        .social-menu ul li a {
+            position: relative;
+            display: block;
+            width: 60px;
+            height: 60px;
+            border-radius: 50%;
+            background-color: #fff;
+            text-align: center;
+            transition: .6s;
+            box-shadow: 0 5px 4px rgba(0, 0, 0, .5);
+        }
+        .social-menu ul li a:hover {
+            transform: translate(0, -10%);
+        }
+        .social-menu ul li:nth-child(1) a:hover {
+            background-color: rgba(0, 0, 0, 0.829);
+        }
+        .social-menu ul li:nth-child(2) a:hover {
+            background-color: #E4405F;
+        }
+        .social-menu ul li:nth-child(3) a:hover {
+            background-color: #0077b5;
+        }
+        .social-menu ul li:nth-child(4) a:hover {
+            background-color: #000;
+        }
+    </style>
+</head>
+<body>
+    <div class="calculator">
+        <input type="text" id="result" readonly>
+        <div class="buttons">
+            <button class="clear">C</button>
+            <button class="operator">/</button>
+            <button class="operator">*</button>
+            <button class="operator">-</button>
+            <button class="number">7</button>
+            <button class="number">8</button>
+            <button class="number">9</button>
+            <button class="operator">+</button>
+            <button class="number">4</button>
+            <button class="number">5</button>
+            <button class="number">6</button>
+            <button class="equals">=</button>
+            <button class="number">1</button>
+            <button class="number">2</button>
+            <button class="number">3</button>
+            <button class="number">0</button>
+            <button class="decimal">.</button>
+        </div>
+    </div>
+
+    <div class="social-menu">
+        <ul>
+            <li><a href="https://github.com/JayRamoliya" target="blank"><i class="fab fa-github"></i></i></a></li>
+            <li><a href="https://www.instagram.com/jay_ramoliya133/" target="blank"><i class="fab fa-instagram"></i></a>
+            </li>
+            <li><a href="https://www.linkedin.com/in/jay-ramoliya-260567237/" target="blank"><i
+                        class="fab fa-linkedin-in"></i></a></li>
+            <li><a href="https://codepen.io/jayramoliya"><i class="fab fa-codepen" target="blank"></i></a></li>
+        </ul>
+    </div>
+    <script src="index.js"></script>
+</body>
+</html>
