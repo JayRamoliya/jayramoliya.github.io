@@ -662,14 +662,20 @@ nav h1 {
 
 
 
-
 #cursor{
-  height: 30px;
-  width: 30px;
+  height: 20px;
+  width: 20px;
+  background-color: var(--secondary-color);
   border-radius: 50%;
   position: fixed;
   z-index: 99;
 }
-#cursor img{
-  width: 100%;
+#cursor-blur{
+  height: 60px;
+  width: 60px;
+  background-color: var(--secondary-color);
+  border-radius: 50%;
+  position: fixed;
+  filter: blur(35px);
+  z-index: 9;
 }

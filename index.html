@@ -27,7 +27,8 @@
         <h3>Jay Ramoliya</h3>
     </div>
 
-    <div id="cursor"><img src="./icons8-cursor (1).svg" alt=""></div>
+    <div id="cursor"></div>
+    <div id="cursor-blur"></div>
 
     <!-- Flying icon -->
     <div class="social_media_icons" id="flying">
@@ -229,10 +230,13 @@
     <script src="./PORT/script.js"></script>
     <script>
         var crsr = document.querySelector("#cursor")
+        var blr = document.querySelector("#cursor-blur")
 
         document.addEventListener("mousemove", function (dets) {
             crsr.style.left = dets.x + "px"
             crsr.style.top = dets.y + "px"
+            blr.style.left = dets.x - 120 + "px"
+            blr.style.top = dets.y - 120 + "px"
         })
 
         const toggle = document.getElementById("toggle");
