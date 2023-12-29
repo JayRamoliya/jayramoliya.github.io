@@ -13,12 +13,13 @@
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.3/css/all.css"
         integrity="sha384-SZXxX4whJ79/gErwcOYf+zWLeJdY/qpuqC4cAa9rOGUstPomtqpuNWT9wdPEn2fk" crossorigin="anonymous" />
 
-        <link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet">
     <link href="https://use.fontawesome.com/releases/v5.6.1/css/all.css" rel="stylesheet">
     <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css" />
 </head>
 
 <body>
+
 
     <!-- loader -->
     <div id="loader">
@@ -26,23 +27,34 @@
         <h3>Jay Ramoliya</h3>
     </div>
 
+    <div id="cursor"><img src="./icons8-cursor (1).svg" alt=""></div>
+
     <!-- Flying icon -->
     <div class="social_media_icons" id="flying">
-        <a href="https://www.instagram.com/jay_ramoliya133/" target="_blank_" id="instagram"><img src="icons8-instagram-50.png" alt=""></a>
-        <a href="https://github.com/JayRamoliya" target="_blank_" id="github"><img src="icons8-github-100.png" alt=""></a>
-        <a href="https://www.linkedin.com/in/jay-ramoliya-260567237/" id="linkdin" target="_blank_"><img src="icons8-linkedin-100.png" alt=""></a>
-      </div>
-      
+        <a href="https://www.instagram.com/jay_ramoliya133/" target="_blank_" id="instagram"><img
+                src="icons8-instagram-50.png" alt=""></a>
+        <a href="https://github.com/JayRamoliya" target="_blank_" id="github"><img src="icons8-github-100.png"
+                alt=""></a>
+        <a href="https://www.linkedin.com/in/jay-ramoliya-260567237/" id="linkdin" target="_blank_"><img
+                src="icons8-linkedin-100.png" alt=""></a>
+    </div>
+
     <!-- Navbar -->
     <div id="page1">
         <nav>
             <h1>Jay Ramoliya</h1>
             <div id="nav2">
                 <h3>Home</h3>
-                <a href="./NAMASTE JAY/index.html" target="_blank"><h3>About</h3></a>
-                <a href="./WEBSITE/index.html" target="_blank"><h3>Website</h3></a>
+                <a href="./NAMASTE JAY/index.html" target="_blank">
+                    <h3>About</h3>
+                </a>
+                <a href="./WEBSITE/index.html" target="_blank">
+                    <h3>Website</h3>
+                </a>
             </div>
-            <a href="./RES PORT/index.html" target="_blank"><h4>Portfolio</h4></a>
+            <a href="./RES PORT/index.html" target="_blank">
+                <h4>Portfolio</h4>
+            </a>
         </nav>
 
         <div id="container">
@@ -212,9 +224,17 @@
         </div>
     </div> -->
 
+
     <script src="https://cdnjs.cloudflare.com/ajax/libs/particles.js/2.0.0/particles.min.js"></script>
     <script src="./PORT/script.js"></script>
     <script>
+        var crsr = document.querySelector("#cursor")
+
+        document.addEventListener("mousemove", function (dets) {
+            crsr.style.left = dets.x + "px"
+            crsr.style.top = dets.y + "px"
+        })
+
         const toggle = document.getElementById("toggle");
         const btn = document.getElementById("btn");
         const links = document.querySelectorAll(".links");
@@ -227,6 +247,7 @@
                 toggle.classList.toggle("active");
             })
         });
+
     </script>
 
 
@@ -291,12 +312,12 @@
     <!-- <script src="js/script.js"></script> -->
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"
-    integrity="sha512-16esztaSRplJROstbIIdwX3N97V1+pZvV33ABoG1H2OyTttBxEGkTsoIVsiP1iaTtM8b3+hu2kB6pQ4Clr5yug=="
-    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+        integrity="sha512-16esztaSRplJROstbIIdwX3N97V1+pZvV33ABoG1H2OyTttBxEGkTsoIVsiP1iaTtM8b3+hu2kB6pQ4Clr5yug=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"
-    integrity="sha512-Ic9xkERjyZ1xgJ5svx3y0u3xrvfT/uPkV99LBwe68xjy/mGtO+4eURHZBW2xW4SZbFrF1Tf090XqB+EVgXnVjw=="
-    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"
+        integrity="sha512-Ic9xkERjyZ1xgJ5svx3y0u3xrvfT/uPkV99LBwe68xjy/mGtO+4eURHZBW2xW4SZbFrF1Tf090XqB+EVgXnVjw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 
     <script src="./PORT/script.js"></script>
 
