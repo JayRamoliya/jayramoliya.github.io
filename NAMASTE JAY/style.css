@@ -1205,10 +1205,11 @@ noscript{
     padding-left: 10px;
 }
 .image-div img{
-    height: 100%;
-    /* border-top-left-radius:10px ; */
-   
+    height: 80%;
+    object-fit: cover;
+    /* border-top-left-radius:10px ; */  
 }
+
 .ProjectHeading{
     color: var(--color-white);
     font-size: 3.4rem;
