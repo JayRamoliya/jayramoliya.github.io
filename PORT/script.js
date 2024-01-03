@@ -69,7 +69,7 @@ gsap.from("#main .user_info .user_name", {
     scrollTrigger: {
         trigger: "#main",
         scroller: 'body',
-        markers: true,
+        // markers: true,
         start: 'top 50%',
         end: 'top 30%',
         // scrub:true // two value aapi saki 
@@ -85,7 +85,7 @@ gsap.from(".about_heading,.about p,.about img", {
     scrollTrigger: {
         trigger: ".about",
         scroller: 'body',
-        markers: true,
+        // markers: true,
         start: 'top 80%',
         end: 'top 30%',
         // scrub:true // two value aapi saki 
@@ -102,7 +102,7 @@ gsap.from("#main .user_img img", {
     scrollTrigger: {
         trigger: "#main",
         scroller: 'body',
-        markers: true,
+        // markers: true,
         start: 'top 50%',
         end: 'top 30%',
         // scrub:true // two value aapi saki 
@@ -119,7 +119,7 @@ gsap.from(".skill_box .box", {
     scrollTrigger: {
         trigger: ".skills",
         scroller: 'body',
-        markers: true,
+        // markers: true,
         start: 'top 60%',
         end: 'top 30%',
         // scrub:true // two value aapi saki 
